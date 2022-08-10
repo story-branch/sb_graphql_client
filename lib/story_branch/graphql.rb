@@ -1,6 +1,7 @@
-# rubocop:disable Style/FrozenStringLiteralComment
-require 'story_branch/graphql/version'
-# rubocop:enable Style/FrozenStringLiteralComment
+# frozen_string_literal: true
+
+require_relative 'graphql/version'
+require_relative 'graphql/client'
 
 # Module initial definition
 module StoryBranch

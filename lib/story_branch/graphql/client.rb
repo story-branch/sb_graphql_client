@@ -1,3 +1,8 @@
+# frozen_string_literal: true
+
+require 'httparty'
+require_relative 'response'
+
 module StoryBranch
   module Graphql
     class Error < StandardError; end
