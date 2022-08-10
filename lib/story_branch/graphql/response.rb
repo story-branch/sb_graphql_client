@@ -9,7 +9,7 @@ module StoryBranch
       end
 
       def data
-        @data ||= @response.parsed_response['data']
+        @data ||= @response.parsed_response["data"]
       end
 
       def success?
@@ -20,10 +20,10 @@ module StoryBranch
         return @errors if @errors
 
         @errors = if @response.success?
-                    @response.parsed_response['errors']
-                  else
-                    [@response.response, @response.parsed_response]
-                  end
+          @response.parsed_response["errors"]
+        else
+          [@response.response, @response.parsed_response]
+        end
       end
 
       def full_error_messages

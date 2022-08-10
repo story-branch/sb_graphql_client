@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'httparty'
-require_relative 'response'
+require "httparty"
+require_relative "response"
 
 module StoryBranch
   module Graphql
@@ -13,7 +13,7 @@ module StoryBranch
         @auth = api_key
       end
 
-      def get(graphql_query:, endpoint: 'graphql')
+      def get(graphql_query:, endpoint: "graphql")
         body_json = query_params_json(graphql_query)
 
         gql_response = HTTParty.post(graphql_endpoint(endpoint), headers: headers, body: body_json)
@@ -32,12 +32,12 @@ module StoryBranch
       def headers
         {
           Authorization: @auth,
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json"
         }
       end
 
       def query_params_json(graphql_query)
-        { query: graphql_query }.to_json
+        {query: graphql_query}.to_json
       end
     end
   end
