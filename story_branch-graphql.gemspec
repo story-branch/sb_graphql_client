@@ -1,8 +1,8 @@
-require_relative 'lib/story_branch/graphql/client/version'
+require_relative 'lib/story_branch/graphql/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "story_branch-graphql-client"
-  spec.version       = StoryBranch::Graphql::Client::VERSION
+  spec.name          = "story_branch-graphql"
+  spec.version       = StoryBranch::Graphql::VERSION
   spec.authors       = ["Rui Baltazar"]
   spec.email         = ["rui.p.baltazar@gmail.com"]
 
