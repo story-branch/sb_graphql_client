@@ -18,7 +18,7 @@ module StoryBranch
 
         gql_response = HTTParty.post(graphql_endpoint(endpoint), headers: headers, body: body_json)
         response = StoryBranch::Graphql::Response.new(response: gql_response)
-        raise GraphqlClientError, response.full_error_messages unless response.success?
+        raise Error, response.full_error_messages unless response.success?
 
         response
       end
