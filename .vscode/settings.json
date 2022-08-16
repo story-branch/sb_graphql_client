@@ -1,7 +1,4 @@
 {
-  "ruby.lint": {
-    "standard": {
-      "useBundler": true,
-    }
-  }
+  "solargraph.diagnostics": true,
+  "solargraph.completion": true
 }

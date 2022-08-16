@@ -35,5 +35,6 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "httparty", ">0"
 
-  spec.add_development_dependency "standard", "~> 1.15"
+  spec.add_development_dependency "solargraph", "~> 0.45"
+  spec.add_development_dependency "solargraph-standardrb", "~> 0.0.4"
 end
